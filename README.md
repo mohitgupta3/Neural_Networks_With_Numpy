@@ -1,15 +1,15 @@
-# Project Title
-Digit Classification using Two Layer Neural Network and Back Propagation. Written in Python and depends only on Numpy
-                              ![](images/img_0.png)    ![](images/img_4.png)
-
-
+# Description
+>1. Digit Classification using Two Layer Neural Network and Back Propagation. Written in Python3 and depends only on Numpy.
+>2. Implimentation of:<br/>
+>>* Artificial Neural Network. (Notebooks/ANN.ipynb)
+>>* Convolutional Neural Network. (Notebooks/CNN.ipynb)
+>>* Recurrent Neural Network. (Notebooks/RNN.ipynb)
 
 ## Getting Started
-These instructions will showcase how to access the data, train and test the model.
 
 ## Getting Data
 1) Download the data in csv format from here :- https://pjreddie.com/projects/mnist-in-csv/.
-2) Already downloaded and kept the MNIST test data in the ./data/ folder. Training data size was huge for Github.
+2) Already downloaded and kept the MNIST test data in the ./data/ folder. Training data size was large for Github.
 
 ## Loading the data
 1) Python script, dataloader.py helps in converting the data from csv to numpy format.
@@ -19,11 +19,11 @@ These instructions will showcase how to access the data, train and test the mode
   ii) mode = 'train' or 'test' to extract the training or test data<br />
   iii) For example :-<br />
       ```python
-          python dataloader.py ./data test
+          python3 dataloader.py ./data test
        ```
  
 ## Training the model
-1) Python Script , nn.py contains all the APIs used for training the model, saving the model and running over the test data
+1) Python Script , neural_net.py contains all the APIs used for training the model, saving the model and running over the test data
 2) The script requires three user inputs<br />
     i)   mode = 'train' or 'test' <br />
     ii)  datapath = path to the data folder inside which the MNIST CSVs files are stored. <br />
@@ -32,7 +32,7 @@ These instructions will showcase how to access the data, train and test the mode
     iv) Example:-
     
         ```python
-            python nn.py train ./data ./new_model
+            python3 neural_net.py train ./data ./new_model
         ```
         
     v) Caution:-
@@ -56,79 +56,8 @@ These instructions will showcase how to access the data, train and test the mode
                         Testing Iteration===>0, Acc ====>0.9766<br />
                         Testing Iteration===>1, Acc ====>0.9609<br />
                         Testing Iteration===>2, Acc ====>0.9844<br />
-                        Testing Iteration===>3, Acc ====>0.9766<br />
-                        Testing Iteration===>4, Acc ====>0.9531<br />
-                        Testing Iteration===>5, Acc ====>0.9531<br />
-                        Testing Iteration===>6, Acc ====>0.9453<br />
-                        Testing Iteration===>7, Acc ====>0.9844<br />
-                        Testing Iteration===>8, Acc ====>0.9687<br />
-                        Testing Iteration===>9, Acc ====>0.9609<br />
-                        Testing Iteration===>10, Acc ====>0.9844<br />
-                        Testing Iteration===>11, Acc ====>0.9297<br />
-                        Testing Iteration===>12, Acc ====>0.9531<br />
-                        Testing Iteration===>13, Acc ====>0.9531<br />
-                        Testing Iteration===>14, Acc ====>0.9297<br />
-                        Testing Iteration===>15, Acc ====>0.9453<br />
-                        Testing Iteration===>16, Acc ====>0.9687<br />
-                        Testing Iteration===>17, Acc ====>0.9766<br />
-                        Testing Iteration===>18, Acc ====>0.9531<br />
-                        Testing Iteration===>19, Acc ====>0.9141<br />
-                        Testing Iteration===>20, Acc ====>0.9766<br />
-                        Testing Iteration===>21, Acc ====>0.9922<br />
-                        Testing Iteration===>22, Acc ====>0.9219<br />
-                        Testing Iteration===>23, Acc ====>0.9531<br />
-                        Testing Iteration===>24, Acc ====>0.9922<br />
-                        Testing Iteration===>25, Acc ====>0.9687<br />
-                        Testing Iteration===>26, Acc ====>0.9531<br />
-                        Testing Iteration===>27, Acc ====>0.8984<br />
-                        Testing Iteration===>28, Acc ====>0.9687<br />
-                        Testing Iteration===>29, Acc ====>0.9453<br />
-                        Testing Iteration===>30, Acc ====>0.9453<br />
-                        Testing Iteration===>31, Acc ====>0.9453<br />
-                        Testing Iteration===>32, Acc ====>0.9531<br />
-                        Testing Iteration===>33, Acc ====>0.9687<br />
-                        Testing Iteration===>34, Acc ====>0.9844<br />
-                        Testing Iteration===>35, Acc ====>0.9766<br />
-                        Testing Iteration===>36, Acc ====>0.9766<br />
-                        Testing Iteration===>37, Acc ====>0.9687<br />
-                        Testing Iteration===>38, Acc ====>0.9375<br />
-                        Testing Iteration===>39, Acc ====>0.9687<br />
-                        Testing Iteration===>40, Acc ====>0.9687<br />
-                        Testing Iteration===>41, Acc ====>0.9609<br />
-                        Testing Iteration===>42, Acc ====>0.9844<br />
-                        Testing Iteration===>43, Acc ====>0.9453<br />
-                        Testing Iteration===>44, Acc ====>0.9531<br />
-                        Testing Iteration===>45, Acc ====>0.9687<br />
-                        Testing Iteration===>46, Acc ====>0.9687<br />
-                        Testing Iteration===>47, Acc ====>0.9766<br />
-                        Testing Iteration===>48, Acc ====>0.9609<br />
-                        Testing Iteration===>49, Acc ====>0.9766<br />
-                        Testing Iteration===>50, Acc ====>0.9531<br />
-                        Testing Iteration===>51, Acc ====>0.9922<br />
-                        Testing Iteration===>52, Acc ====>0.9453<br />
-                        Testing Iteration===>53, Acc ====>0.9766<br />
-                        Testing Iteration===>54, Acc ====>0.9531<br />
-                        Testing Iteration===>55, Acc ====>0.9453<br />
-                        Testing Iteration===>56, Acc ====>0.9453<br />
-                        Testing Iteration===>57, Acc ====>0.9453<br />
-                        Testing Iteration===>58, Acc ====>0.9219<br />
-                        Testing Iteration===>59, Acc ====>0.9609<br />
-                        Testing Iteration===>60, Acc ====>0.9531<br />
-                        Testing Iteration===>61, Acc ====>0.9609<br />
-                        Testing Iteration===>62, Acc ====>0.9297<br />
-                        Testing Iteration===>63, Acc ====>0.9687<br />
-                        Testing Iteration===>64, Acc ====>0.9297<br />
-                        Testing Iteration===>65, Acc ====>0.9766<br />
-                        Testing Iteration===>66, Acc ====>0.9687<br />
-                        Testing Iteration===>67, Acc ====>0.9453<br />
-                        Testing Iteration===>68, Acc ====>0.9531<br />
-                        Testing Iteration===>69, Acc ====>0.9219<br />
-                        Testing Iteration===>70, Acc ====>0.9531<br />
-                        Testing Iteration===>71, Acc ====>0.9531<br />
-                        Testing Iteration===>72, Acc ====>0.9531<br />
-                        Testing Iteration===>73, Acc ====>0.9531<br />
-                        Testing Iteration===>74, Acc ====>0.9297<br />
-                        Testing Iteration===>75, Acc ====>0.9531<br />
+                                    -- -- -- -- -- -- --<br/>
+                                    -- -- -- -- -- -- --<br/>
                         Testing Iteration===>76, Acc ====>0.9297<br />
                         Testing Iteration===>77, Acc ====>0.9687<br />
 
@@ -138,9 +67,9 @@ These instructions will showcase how to access the data, train and test the mode
 3) Run using :-
   
   ```python
-      python run_on_image.py images/img_4.png ./model_bn/
+      python3 run_on_image.py images/img_4.png ./model_bn/
   ```  
-## Model Desgin
+## Model Description
 1) Number of Hidden Layers - 2
 2) Hidden Layer Sizes - (1024,2048)
 3) Learning Rate - 0.001
