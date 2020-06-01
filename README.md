@@ -18,8 +18,7 @@
   i) datapath = path to the data folder inside which the MNIST CSVs files are stored. <br />
   ii) mode = 'train' or 'test' to extract the training or test data<br />
   iii) For example :-<br />
-      ```python
-          python3 dataloader.py ./data test
+      ```python3 dataloader.py ./data test
        ```
  
 ## Training the model
@@ -31,16 +30,14 @@
     
     iv) Example:-
     
-        ```python
-            python3 neural_net.py train ./data ./new_model
+        ```python3 neural_net.py train ./data ./new_model
         ```
 
 ## Testing the model
 1) I have already provided the trained model inside the model folder and the test data inside the data folder.
 2) To get started, use the follwing command.
     
-    ```python
-        python neural_net.py test ./data ./model_bn
+    ```python3 neural_net.py test ./data ./model_bn
     ```
 
   If everything is set-up well, you should see the following results on your console.<br />
@@ -65,10 +62,10 @@
   ```  
 ## Model Description
 1) Number of Hidden Layers - 2
-2) Hidden Layer Sizes - (1024,2048)
+2) Hidden Layer Sizes - (1024, 2048)
 3) Learning Rate - 0.001
 4) Batch Size - 128
-5) Maximum Iterations for training - 1000000
+5) Number of epoch for training - 1000000
 6) Batch Norm Decay Rate - 0.9
 
 ## Observations
