@@ -34,12 +34,6 @@
         ```python
             python3 neural_net.py train ./data ./new_model
         ```
-        
-    v) Caution:-
-        
-        If you see the following exception:- 
-                Exception : Not able to parse MNIST Data
-        Please download the mnist_train.csv from the above mentioned link.
 
 ## Testing the model
 1) I have already provided the trained model inside the model folder and the test data inside the data folder.
@@ -80,11 +74,3 @@
 ## Observations
 1) Faster Convergence and better accuracy by using Batch Normalization before Relu operation. Please refere to the plots below.
 2) Experiments with increasing the hidden layers and size might help us in finding a sweet spot where we are neither underfitting nor overfitting.
-
-
-## Loss and Accuracy Curves with Batch Normalization
-![](figs/with_bn.png)
-
-## Loss and Accuracy Curves without Batch Normalization
-![](figs/without_bn.png)
-
