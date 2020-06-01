@@ -46,7 +46,7 @@
 2) To get started, use the follwing command.
     
     ```python
-        python nn.py test ./data ./model_bn
+        python neural_net.py test ./data ./model_bn
     ```
 
   If everything is set-up well, you should see the following results on your console.<br />
